@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/halamanpertama', function () {
+    return view('pagesatu');
+});
+
+Route::get('/dashboard', 'DashboardController@index');
+Route::get('/tambah', 'DashboardController@tambah');
